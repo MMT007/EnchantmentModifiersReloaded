@@ -1,1 +1,1 @@
-{"parent": "minecraft:item/handheld","textures": {"layer0": "minecraft:item/sword/knockback/stone"}}
+{"parent": "minecraft:item/handheld", "textures": {"layer0": "minecraft:item/sword/knockback/stone"}}

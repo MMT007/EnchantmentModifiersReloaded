@@ -1,1 +1,1 @@
-{"parent": "minecraft:item/handheld","textures": {"layer0": "minecraft:item/sword/fire_aspect/smite/stone"}}
+{"parent": "minecraft:item/handheld", "textures": {"layer0": "minecraft:item/sword/fire_aspect/smite/stone"}}

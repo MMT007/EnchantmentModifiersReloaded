@@ -1,1 +1,1 @@
-{"parent": "minecraft:item/handheld","textures": {"layer0": "minecraft:item/pickaxe/fortune/stone"}}
+{"parent": "minecraft:item/handheld", "textures": {"layer0": "minecraft:item/pickaxe/fortune/stone"}}
