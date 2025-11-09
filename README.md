@@ -3,6 +3,8 @@
 A Minecraft resourcepack that makes enchantments look like Tinkers' Modifers ![fortune](https://user-images.githubusercontent.com/65592600/235930835-d9fa23c8-3c49-45bd-8d00-f45dd058ab06.png)<br/>
 Original Pack: [Enchantment Modifiers by EssieFir](https://modrinth.com/resourcepack/enchantment-modifiers)
 
+[![Ko-Fi](https://cdn.modrinth.com/data/cached_images/a256a4dae1bca31bcf4b240ac2dcd3abcd255b80.png)](https://ko-fi.com/F1F11O4DZR)
+
 ## Versions
 #### 1.21.4 or <ins>Older</ins> Use The Original Pack: [Enchantment Modifiers](https://modrinth.com/resourcepack/enchantment-modifiers)
 #### 1.21.5 or <ins>Newer</ins> No mods required! (emissive textures Don't Work atm)
