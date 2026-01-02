@@ -1,0 +1,133 @@
+{
+  "model": {
+    "type": "minecraft:composite",
+    "models": [
+      {
+        "type": "minecraft:condition",
+        "property": "minecraft:fishing_rod/cast",
+        "on_false": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/fishing_rod"
+        },
+        "on_true": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/fishing_rod_cast"
+        }
+      },
+      {
+        "type": "minecraft:condition",
+        "property": "minecraft:component",
+        "predicate": "minecraft:enchantments",
+        "value": [
+          {
+            "enchantments": "minecraft:mending",
+            "levels": {
+              "min": 1
+            }
+          }
+        ],
+        "on_true": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/fishing_rod/mending"
+        },
+        "on_false": {
+          "type": "minecraft:empty"
+        }
+      },
+      {
+        "type": "minecraft:condition",
+        "property": "minecraft:component",
+        "predicate": "minecraft:enchantments",
+        "value": [
+          {
+            "enchantments": "minecraft:vanishing_curse",
+            "levels": {
+              "min": 1
+            }
+          }
+        ],
+        "on_true": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/fishing_rod/vanishing_curse"
+        },
+        "on_false": {
+          "type": "minecraft:empty"
+        }
+      },
+      {
+        "type": "minecraft:condition",
+        "property": "minecraft:component",
+        "predicate": "minecraft:enchantments",
+        "value": [
+          {
+            "enchantments": "minecraft:unbreaking",
+            "levels": {
+              "min": 1
+            }
+          }
+        ],
+        "on_true": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/fishing_rod/unbreaking"
+        },
+        "on_false": {
+          "type": "minecraft:empty"
+        }
+      },
+      {
+        "type": "minecraft:condition",
+        "property": "minecraft:component",
+        "predicate": "minecraft:enchantments",
+        "value": [
+          {
+            "enchantments": "minecraft:lure",
+            "levels": {
+              "min": 1
+            }
+          }
+        ],
+        "on_true": {
+          "type": "minecraft:condition",
+          "property": "minecraft:fishing_rod/cast",
+          "on_true": {
+            "type": "minecraft:empty"
+          },
+          "on_false": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/fishing_rod/lure"
+          }
+        },
+        "on_false": {
+          "type": "minecraft:empty"
+        }
+      },
+      {
+        "type": "minecraft:condition",
+        "property": "minecraft:component",
+        "predicate": "minecraft:enchantments",
+        "value": [
+          {
+            "enchantments": "minecraft:luck_of_the_sea",
+            "levels": {
+              "min": 1
+            }
+          }
+        ],
+        "on_true": {
+          "type": "minecraft:condition",
+          "property": "minecraft:fishing_rod/cast",
+          "on_true": {
+            "type": "minecraft:empty"
+          },
+          "on_false": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/fishing_rod/luck_of_the_sea"
+          }
+        },
+        "on_false": {
+          "type": "minecraft:empty"
+        }
+      }
+    ]
+  }
+}

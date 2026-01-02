@@ -1,0 +1,71 @@
+{
+  "model": {
+    "type": "minecraft:composite",
+    "models": [
+      {
+        "type": "minecraft:model",
+        "model": "minecraft:item/flint_and_steel"
+      },
+      {
+        "type": "minecraft:condition",
+        "property": "minecraft:component",
+        "predicate": "minecraft:enchantments",
+        "value": [
+          {
+            "enchantments": "minecraft:mending",
+            "levels": {
+              "min": 1
+            }
+          }
+        ],
+        "on_true": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/flint_and_steel/mending"
+        },
+        "on_false": {
+          "type": "minecraft:empty"
+        }
+      },
+      {
+        "type": "minecraft:condition",
+        "property": "minecraft:component",
+        "predicate": "minecraft:enchantments",
+        "value": [
+          {
+            "enchantments": "minecraft:vanishing_curse",
+            "levels": {
+              "min": 1
+            }
+          }
+        ],
+        "on_true": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/flint_and_steel/vanishing_curse"
+        },
+        "on_false": {
+          "type": "minecraft:empty"
+        }
+      },
+      {
+        "type": "minecraft:condition",
+        "property": "minecraft:component",
+        "predicate": "minecraft:enchantments",
+        "value": [
+          {
+            "enchantments": "minecraft:unbreaking",
+            "levels": {
+              "min": 1
+            }
+          }
+        ],
+        "on_true": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/flint_and_steel/unbreaking"
+        },
+        "on_false": {
+          "type": "minecraft:empty"
+        }
+      }
+    ]
+  }
+}
